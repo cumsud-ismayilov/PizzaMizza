@@ -94,7 +94,7 @@ function ShowDetailModal(id) {
                     <p>${foundPizza.dsc}</p>
                     <p>Price:${foundPizza.price} AZN</p>
                     <p>Country:${foundPizza.country}</p>
-                    <div> ${generateRating(foundPizza.rate)} </div>
+                    <div> ${generatingRate(foundPizza.rate)} </div>
                     <button class="bg-[violet] p-[6px_20px] cursor-pointer"
                      ">Add To Cart</button>
 
