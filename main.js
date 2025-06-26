@@ -94,6 +94,7 @@ function ShowDetailModal(id) {
                     <p>${foundPizza.dsc}</p>
                     <p>Price:${foundPizza.price} AZN</p>
                     <p>Country:${foundPizza.country}</p>
+                    <div>${foundPizza.rate}</div>
                     <button class="bg-[violet] p-[6px_20px] cursor-pointer"
                      ">Add To Cart</button>
 
@@ -101,4 +102,14 @@ function ShowDetailModal(id) {
 
             </div>
     `;
+}
+
+function generatingRate(rate) {
+  let result = "";
+  for (let i = 0; i < rate; i++) {
+    result += `
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png"
+       alt="" class="w-[30px]">
+    `;
+  }
 }
