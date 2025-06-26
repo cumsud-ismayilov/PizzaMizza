@@ -112,4 +112,5 @@ function generatingRate(rate) {
        alt="" class="w-[30px]">
     `;
   }
+  return result
 }
